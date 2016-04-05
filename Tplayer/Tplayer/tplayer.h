@@ -19,7 +19,7 @@ public:
 	~Tplayer();
 
 private:
-	void 被单击();
+	void 按钮被单击();
 	QAction *openAction;
 
 	Ui::TplayerClass ui;
