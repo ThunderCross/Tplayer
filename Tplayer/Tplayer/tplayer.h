@@ -1,14 +1,17 @@
-#ifndef TPLAYER_H
-#define TPLAYER_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <QtWidgets/QMainWindow>
 #include "ui_tplayer.h"
 
-#include <QtCore>
+//#include <QtCore>
+//#include <QTextEdit>
 
 #ifdef _MSC_VER
 #pragma execution_character_set("utf-8")
 #endif
+
+class QTextEdit;
 
 class Tplayer : public QMainWindow
 {
@@ -19,8 +22,16 @@ public:
 	~Tplayer();
 
 private:
-	void °´Å¥±»µ¥»÷();
+	void openFile();
+	void saveFile();
+
+	void about();
+
+	QTextEdit *textEdit;
+
+	QAction *aboutAction;
 	QAction *openAction;
+	QAction *saveAction;
 
 	Ui::TplayerClass ui;
 };
